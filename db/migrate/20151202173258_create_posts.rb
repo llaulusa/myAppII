@@ -1,0 +1,12 @@
+class CreatePosts < ActiveRecord::Migration
+  def change
+    create_table :posts do |t|
+      t.string :title
+      t.string :author
+      t.text :body
+
+      t.timestamps null: false
+    end
+  end
+end
+# can edit this file as long as i have not run migrations yet
